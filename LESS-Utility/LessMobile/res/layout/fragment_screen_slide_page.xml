@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/button_type1_normal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/texttop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/title_marginTop"
+        android:text="HOW YOU COMPARE"
+        android:textSize="@dimen/title_textsize"
+        android:textColor="#FFF"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="@dimen/arrow_size"
+        android:layout_height="@dimen/arrow_size"
+        android:layout_alignBottom="@+id/texttop"
+        android:layout_marginBottom="@dimen/arrow_margin_bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/texttop"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/dude"
+        android:layout_width="@dimen/slide1_image_size"
+        android:layout_height="@dimen/slide1_image_size"
+        android:layout_alignLeft="@+id/texttop"
+        android:layout_centerVertical="true"
+        android:src="@drawable/person_icon" />
+
+    <ImageView
+        android:id="@+id/city"
+        android:layout_width="@dimen/slide1_image_size"
+        android:layout_height="@dimen/slide1_image_size"
+        android:layout_alignRight="@+id/texttop"
+        android:layout_centerVertical="true"
+        android:src="@drawable/city_icon" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dude"
+        android:layout_below="@+id/dude"
+        android:layout_marginTop="14dp"
+        android:textColor="#FFFFFF"
+        android:text="N/A"
+        android:textSize="@dimen/smaller_textsize" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toLeftOf="@+id/arrow"
+        android:textColor="#FFFFFF"
+        android:text="N/A"
+        android:textSize="@dimen/smaller_textsize" />
+
+</RelativeLayout>

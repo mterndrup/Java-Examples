@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<style name="SwitchText">
+    <item name="android:paddingLeft">8px</item>
+    <item name="android:paddingBottom">8px</item>
+    <item name="android:textColor">#FFeeFFee</item>
+    <item name="android:textSize">24dip</item>
+    <item name="android:shadowColor">#BB000000</item>
+    <item name="android:shadowDx">1</item>
+    <item name="android:shadowDy">1</item>
+    <item name="android:shadowRadius">1</item>
+  </style>
+
+ 
+ 
+
+	 <style name="mySwitchStyle">
+        <item name="track">@drawable/switch_track</item>
+        <item name="thumb">@drawable/background_fenced</item>  
+        <item name="switchTextAppearanceAttrib">@style/mySwitchTextAppearance</item>
+        <item name="textOn">OFF</item>
+        <item name="textOff">ON</item>
+        <item name="pushStyle">false</item>
+        <item name="textOnThumb">true</item>
+        <item name="thumbExtraMovement">0dp</item>
+        <item name="thumbTextPadding">2dp</item>
+        <item name="trackTextPadding">6dp</item>
+        <item name="switchMinWidth">5dp</item>
+        <item name="switchMinHeight">5dp</item>
+        <item name="switchPadding">3dp</item>
+    </style>
+    
+    <style name="mySwitchTextAppearance">
+        <item name="textColor">#FFeeFFee</item>
+        <item name="textColorHighlight">#FFeeFFee</item>
+        <item name="textColorHint">#FFeeFFee</item>
+        <item name="textColorLink">#FFeeFFee</item>
+        <item name="textSize">14sp</item>
+        <item name="textStyle">normal</item>
+        <item name="typeface">sans</item>
+    </style>
+	
+    <style name="Animation">
+    <item name="@android:windowEnterAnimation">@anim/zoomin</item>
+    <item name="@android:windowExitAnimation">@anim/fadeout</item>
+	</style>
+	
+    <style name="Intro">
+    <item name="@android:windowEnterAnimation">@anim/moveup</item>
+	</style>
+	
+    <style name="Scroller">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--  
+        <item name="android:background">@drawable/slider_back</item>
+        -->
+        <item name="android:layout_margin">3dp</item>
+    </style>
+    
+</resources>

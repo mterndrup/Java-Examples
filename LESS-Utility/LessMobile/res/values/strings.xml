@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AndroidSwitchDemoActivity!</string>
+    <string name="app_name">LESS</string>
+    <string name="dateSliderTitle">Selected date</string>
+
+    <drawable name="red_drawable">#CCAA1883</drawable>
+    <drawable name="green_drawable">#CC123Bff</drawable>
+    
+    <string name="cityselection">Tallahassee, FL</string>
+    <!-- About LESS -->
+    <string name="aboutless">The LESS mission is to make energy affordable and transparent. 
+        We believe that by making information about energy usage available to people, 
+        people can make better decisions.</string>
+    
+    <!-- Contact Us Page -->
+    <string name="general">General Comment</string>
+</resources>

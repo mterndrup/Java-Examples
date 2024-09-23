@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/texttop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="CITY OF TALLAHASSEE"
+        android:textColor="#FFF"
+		android:textSize="@dimen/title_textsize" />
+
+    <TextView
+        android:id="@+id/utility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="#FFF"
+        android:textSize="@dimen/title_textsize"
+        android:text="Utility Customer Service" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/utility"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="#000000"
+        android:textSize="@dimen/title_textsize"
+        android:text="850-891-4968" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="@dimen/arrow_size"
+        android:layout_height="@dimen/arrow_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/texttop"
+        android:layout_marginRight="@dimen/slidesocial2_arrow_marginRight"
+        android:layout_marginTop="@dimen/slidesocial3_arrow_marginTop"
+        android:layout_marginBottom="@dimen/slidesocial3_arrow_marginBottom"
+        android:src="@drawable/arrow" />
+
+</RelativeLayout>

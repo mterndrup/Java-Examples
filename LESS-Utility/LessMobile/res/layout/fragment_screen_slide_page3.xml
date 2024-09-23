@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mySwitch="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_type1_normal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <TextView
+            android:id="@+id/texttop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/title_marginTop"
+            android:text="BUDGET PLANNER"
+            android:textColor="#FFF"
+            android:textSize="@dimen/title_textsize"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="@dimen/arrow_size"
+            android:layout_height="@dimen/arrow_size"
+            android:layout_marginLeft="@dimen/slide3_arrow_marginLeft"
+            android:layout_marginTop="@dimen/slide3_arrow_marginTop"
+            android:layout_toRightOf="@+id/texttop"
+            android:src="@drawable/arrow" />
+
+        <EditText
+            android:id="@+id/budget_edittext"
+            android:layout_width="@dimen/budget_edittext_width"
+            android:layout_height="@dimen/budget_edittext_height"
+            android:layout_marginLeft="@dimen/budget_edittext_marginLeft"
+            android:layout_marginTop="@dimen/budget_edittext_marginTop"
+            android:background="@drawable/edittext_custom"
+            android:clickable="true"
+            android:editable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:inputType="phone"
+            android:paddingBottom="0dp"
+            android:paddingLeft="@dimen/budget_edittext_paddingLeft"
+            android:paddingTop="0dp"
+            android:textSize="@dimen/budget_edittext_texsize" />
+
+        <com.draw.DrawBudget
+            android:id="@+id/budget"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/budget_edittext"
+            android:layout_marginTop="@dimen/budget_marginTop"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/texttop"
+            android:layout_marginTop="@dimen/spending_marginTop"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingTop="2dip"
+            android:text="Spending Goal"
+            android:textColor="#FFF"
+            android:textSize="@dimen/slide3_days_textsize" />
+
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:paddingTop="@dimen/days_paddingTop"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/slide3_days_textsize" />
+        
+        
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="@dimen/help_size"
+            android:layout_height="@dimen/help_size"
+            android:layout_alignTop="@+id/toggle"
+            android:layout_marginTop="@dimen/help_top"
+            android:layout_marginLeft="@dimen/help_left"
+            android:layout_toRightOf="@+id/toggle"
+            android:src="@drawable/help" />
+
+        <com.draw.SwitchButton
+            android:id="@+id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/slide3_toggle_marginTop" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

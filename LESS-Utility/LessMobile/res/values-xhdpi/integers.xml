@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Menu Integers -->
+    <!-- 0.025, 0.097 -->
+    <item name="divider_weight_pt1" format="float" type="integer">0.0</item>
+    <item name="divider_weight_pt2" format="float" type="integer">1.0</item>
+    <!-- 0.03, 0.97 -->
+    <item name="divider_weight_2" format="float" type="integer">0.0</item>
+    <item name="divider_weight_2pt2" format="float" type="integer">1.0</item>
+    <!-- 0.035, 0.965 -->
+    <item name="divider_weight_3" format="float" type="integer">0.0</item>
+    <item name="divider_weight_3pt2" format="float" type="integer">1.0</item>
+    
+    <item name="draw_budget_textsize" type="integer">14</item>
+    <item name="draw_budget_height" type="integer">30</item>
+</resources>

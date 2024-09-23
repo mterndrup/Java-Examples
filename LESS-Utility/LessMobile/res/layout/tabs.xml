@@ -1,0 +1,351 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLevel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <!-- Menu Panel -->
+
+        <RelativeLayout
+            android:id="@+id/menuPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu_unselected"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/dashboard_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/menu_selected"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/dashboard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/menu_dashboard_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="0dp"
+                    android:gravity="bottom"
+                    android:paddingLeft="15dp"
+                    android:text="Dashboard"
+                    android:textColor="#000"
+                    android:textSize="@dimen/menu_title_textsize" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineview_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashboard_layout"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="@integer/divider_weight_pt1"
+                    android:background="@color/menu_title_color" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_weight="@integer/divider_weight_pt2"
+                    android:background="@color/menu_triangle_white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settings_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lineview_layout"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/menu_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/menu_selected_below"
+                    android:gravity="bottom"
+                    android:paddingLeft="15dp"
+                    android:text="Settings"
+                    android:textColor="@color/menu_title_color"
+                    android:textSize="@dimen/menu_title_textsize" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gotosettings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_layout"
+                android:layout_marginTop="@dimen/menu_accent_marginTop"
+                android:background="@drawable/menu_unselected"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/menu_accent_marginLeft"
+                android:text="notification options"
+                android:textColor="#FFF"
+                android:textSize="@dimen/menu_accent_textsize" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/changepass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gotosettings"
+                android:layout_marginBottom="@dimen/menu_accent_marginBottom"
+                android:layout_marginTop="@dimen/menu_accent_marginTop"
+                android:background="@drawable/menu_unselected"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/menu_accent_marginLeft"
+                android:text="change password"
+                android:textColor="#FFF"
+                android:textSize="@dimen/menu_accent_textsize" >
+            </TextView>
+
+            <View
+                android:id="@+id/menu_item_divider_3"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/changepass"
+                android:background="@color/menu_title_color" />
+
+            <TextView
+                android:id="@+id/menu_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_item_divider_3"
+                android:background="@drawable/menu_unselected"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Info"
+                android:textColor="@color/menu_title_color"
+                android:textSize="@dimen/menu_title_textsize" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/about_less"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_info"
+                android:layout_marginTop="@dimen/menu_accent_marginTop"
+                android:background="@drawable/menu_unselected"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/menu_accent_marginLeft"
+                android:text="about LESS"
+                android:textColor="#FFF"
+                android:textSize="@dimen/menu_accent_textsize" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/contact_us"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_less"
+                android:layout_marginTop="@dimen/menu_accent_marginTop"
+                android:background="@drawable/menu_unselected"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/menu_accent_marginLeft"
+                android:text="contact us"
+                android:textColor="#FFF"
+                android:textSize="@dimen/menu_accent_textsize" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/faq"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_us"
+                android:layout_marginBottom="@dimen/menu_accent_marginBottom"
+                android:layout_marginTop="@dimen/menu_accent_marginTop"
+                android:background="@drawable/menu_unselected"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/menu_accent_marginLeft"
+                android:text="faq"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/menu_accent_textsize" >
+            </TextView>
+
+            <View
+                android:id="@+id/menu_item_divider_4"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/faq"
+                android:background="@color/menu_title_color" />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_item_divider_4"
+                android:background="@drawable/menu_unselected"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Logout"
+                android:textColor="#FFF"
+                android:textSize="@dimen/menu_title_textsize" >
+            </TextView>
+        </RelativeLayout>
+
+        <!-- Sliding Panel -->
+
+        <LinearLayout
+            android:id="@+id/slidingPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/white"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header_height"
+                android:background="#000000" >
+
+                <ImageView
+                    android:id="@+id/menuViewButton"
+                    android:layout_width="@dimen/hamburger_size"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/hamburger"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/menuViewButton"
+                    android:layout_width="@dimen/point_size"
+                    android:layout_height="@dimen/point_size"
+                    android:layout_alignParentTop="true"
+                    android:layout_toLeftOf="@+id/address"
+                    android:clickable="true"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/point"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/header_textsize" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/belowPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/day_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center_vertical"
+                            android:text="Day 23"
+                            android:textColor="@color/dashboard_text_color"
+                            android:textSize="@dimen/title_date_cost_textsize" />
+
+                        <ImageView
+                            android:id="@+id/arrowBlue"
+                            android:layout_width="@dimen/arrow_size"
+                            android:layout_height="@dimen/arrow_size"
+                            android:layout_alignBottom="@+id/day_date"
+                            android:layout_marginBottom="@dimen/blueArrow_marginBottom"
+                            android:layout_marginLeft="@dimen/blueArrow_marginLeft"
+                            android:layout_toRightOf="@+id/day_date"
+                            android:src="@drawable/white_arrow_blue_circle_44x44" />
+
+                        <TextView
+                            android:id="@+id/day_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="10dp"
+                            android:gravity="right"
+                            android:text="NO DATA"
+                            android:textColor="@color/dashboard_text_color"
+                            android:textSize="@dimen/title_date_cost_textsize" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/chart_paddingTop"
+                    android:weightSum="1.0" >
+
+                    <TextView
+                        android:id="@+id/year_timeframe"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5"
+                        android:background="#FFF"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/dashboard_text_color_opaque"
+                        android:textSize="@dimen/alt_textsize" />
+
+                    <TextView
+                        android:id="@+id/killowatts"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.5"
+                        android:background="#FFF"
+                        android:gravity="right"
+                        android:textColor="@color/dashboard_text_color_opaque"
+                        android:textSize="@dimen/alt_textsize" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/realtabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1" />
+
+                <android.support.v4.app.FragmentTabHost
+                    android:id="@android:id/tabhost"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:tabStripEnabled="false" >
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0" />
+                </android.support.v4.app.FragmentTabHost>
+
+                <com.custom.viewpager.CustomViewPager
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#3399FF"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

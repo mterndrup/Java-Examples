@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background colors -->
+    <color name="background_type1">#4174b9</color>
+    <color name="background_type2">#4f9bd4</color>
+    <color name="background_type2_opaque">#664f9bd4</color>
+    <color name="background_type3">#bec8e6</color>
+    <color name="dateslider_selected">#FF5cae98</color>
+    
+    <!-- Button Colors -->
+    <color name="button_type1_normal">#4f9bd4</color>
+    <color name="button_type1_pushed">#366990</color>
+    <color name="button_type1_active">#5ab4e5</color>
+    <color name="button_type1_border">#4273B9</color>
+    
+    <color name="button_type2_normal">#5AB4E5</color>
+    <color name="button_type2_pushed">#366990</color>
+    <color name="button_type2_border">#4273B9</color>
+    
+    <color name="button_type3_normal_start">#52A2D9</color>
+    <color name="button_type3_normal_end">#4B90C1</color>
+    <color name="button_type3_pushed_start">#4589B7</color>
+    <color name="button_type3_pushed_end">#3F79A3</color>
+    <color name="button_type3_disabled_start">#4D92CE</color>
+    <color name="button_type3_disabled_end">#4888BF</color>
+    <color name="button_type3_border">#315876</color>
+    
+    <color name="button_type4_normal">#5ab4e5</color>
+    <color name="button_type4_pressed">#366990</color>
+    
+    <color name="button_type5_normal">#ECF0F0</color>
+    <color name="button_type5_pressed">#B9D7F0</color>
+    
+    <!-- TextColors -->
+    <color name="button_type3_disabled_textColor">#719ecf</color>
+    <color name="button_type5_textColor">#4F9BD4</color>
+    <color name="menu_title_color">#20658A</color>
+    <color name="dashboard_text_color">#4273B9</color>
+    <color name="dashboard_text_color_opaque">#A64273B9</color>
+    <color name="listview_address_text_color">#2E586A</color>
+    <color name="notification_body_text_color">#2c3e50</color>
+    <color name="notification_disabled_text_color">#909394</color>
+    
+    <!-- Menu Colors -->
+    <color name="menu_normal">#4f9bd4</color>
+    <color name="menu_active">#5ab4e5</color>
+    <color name="menu_triangle">#cde5f7</color>
+    <color name="menu_triangle_white">#fbfbfb</color>
+    
+    <!-- Used for listview backgrounds <color name="listview_alt">#4f9bd4</color>-->
+    <color name="listview_original">#5fbdeb</color>
+    <color name="listview_alt">#000</color>
+    <color name="listview_selected">#FFF</color>
+    <color name="listview_header">#4174B9</color>
+</resources>

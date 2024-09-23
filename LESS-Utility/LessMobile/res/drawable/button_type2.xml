@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <layer-list>
+            
+            <item>
+                <shape>
+                     <!--  Gradient Bg for Button -->
+				   <gradient
+				      android:startColor="@color/button_type2_pushed"
+				      android:endColor="@color/button_type2_pushed"
+				      android:angle="270" />
+				   <stroke
+				        android:width="0.05dp"
+				        android:color="@color/button_type2_border"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_enabled="true">
+        <layer-list>
+            
+            <item>
+                <shape android:shape="rectangle">
+                	<gradient
+				      android:startColor="@color/button_type2_normal"
+				      android:endColor="@color/button_type2_normal"
+				      android:angle="90" />   
+				      <stroke
+				        android:width="0.05dp"
+				        android:color="@color/button_type2_border"/>
+				</shape>
+            </item>
+        </layer-list>
+    </item>
+
+
+</selector>

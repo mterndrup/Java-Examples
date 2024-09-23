@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/belowlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/borders"
+        android:paddingBottom="15dp" >
+
+        <CheckBox
+            android:id="@+id/CheckboxAppDaily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appNotify"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="@dimen/checkbox_text_marginTop"
+            android:button="@drawable/checkbox"
+            android:paddingLeft="@dimen/checkbox_text_marginLeft"
+            android:text="Daily"
+            android:textSize="@dimen/title_textsize" />
+
+        <TextView
+            android:id="@+id/appNotify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:gravity="bottom"
+            android:paddingLeft="15dp"
+            android:text="App Notifications"
+            android:textColor="@color/background_type1"
+            android:textSize="@dimen/title_textsize" />
+
+        <CheckBox
+            android:id="@+id/CheckboxAppWeekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/CheckboxAppDaily"
+            android:layout_alignBottom="@+id/CheckboxAppDaily"
+            android:layout_marginLeft="34dp"
+            android:layout_toRightOf="@+id/CheckboxAppDaily"
+            android:button="@drawable/checkbox"
+            android:paddingLeft="@dimen/checkbox_text_marginLeft"
+            android:text="Weekly"
+            android:textSize="@dimen/title_textsize" />
+
+        <com.draw.SwitchButton
+            android:id="@+id/toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="3dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Menu Integers -->
+    <!-- 0.035, 0.965 -->
+    <item name="divider_weight_pt1" format="float" type="integer">0.0</item>
+    <item name="divider_weight_pt2" format="float" type="integer">1.0</item>
+    <!-- 0.035, 0.965 -->
+    <item name="divider_weight_2" format="float" type="integer">0.0</item>
+    <item name="divider_weight_2pt2" format="float" type="integer">1.0</item>
+    <!-- 0.04, 0.96 -->
+    <item name="divider_weight_3" format="float" type="integer">0.00</item>
+    <item name="divider_weight_3pt2" format="float" type="integer">1.00</item>
+    
+    <item name="date_large_textsize" type="integer">48</item>
+    <item name="date_inbetween_textsize" type="integer">35</item>
+    <item name="date_small_textsize" type="integer">18</item>
+    <item name="draw_budget_textsize" type="integer">34</item>
+    <item name="draw_budget_height" type="integer">40</item>
+</resources>

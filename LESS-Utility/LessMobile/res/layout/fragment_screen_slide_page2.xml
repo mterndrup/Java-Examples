@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/button_type1_normal" >
+
+    <TextView
+        android:id="@+id/texttop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/title_marginTop"
+        android:text="HOW TO DO LESS"
+        android:textColor="#FFF"
+        android:textSize="@dimen/title_textsize"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/arrow2"
+        android:layout_width="@dimen/arrow_size"
+        android:layout_height="@dimen/arrow_size"
+        android:layout_alignBottom="@+id/texttop"
+        android:layout_marginBottom="@dimen/arrow_margin_bottom"
+        android:layout_marginLeft="@dimen/slide2_arrow_marginLeft"
+        android:layout_toRightOf="@+id/texttop"
+        android:src="@drawable/arrow" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/texttop"
+        android:layout_marginTop="18dp" >
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingLeft="@dimen/hamburger_size"
+            android:paddingRight="@dimen/hamburger_size"
+            android:text="Turn down water heater theromstats to 120 F"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/smaller_textsize" />
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,265 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <!-- Menu Panel -->
+
+        <RelativeLayout
+            android:id="@+id/menuPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/menu_unselected"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/dashboard_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/dashboard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/menu_dashboard_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/menu_unselected"
+                    android:gravity="bottom"
+                    android:text="Dashboard"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/menu_title_textsize" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lineview_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashboard_layout"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/menu_title_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settings_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lineview_layout"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/menu_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/menu_unselected"
+                    android:gravity="bottom"
+                    android:text="Settings"
+                    android:textColor="@color/menu_title_color"
+                    android:textSize="@dimen/menu_title_textsize" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gotosettings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_layout"
+                android:background="@drawable/menu_unselected"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/menu_accent_marginLeft"
+                android:paddingTop="@dimen/menu_accent_marginTop"
+                android:text="notification options"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/menu_accent_textsize" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/changepass"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gotosettings"
+                android:background="@drawable/menu_unselected"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/menu_accent_marginBottom"
+                android:paddingLeft="@dimen/menu_accent_marginLeft"
+                android:paddingTop="@dimen/menu_accent_marginTop"
+                android:text="change password"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/menu_accent_textsize" >
+            </TextView>
+
+            <View
+                android:id="@+id/menu_item_divider_3"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/changepass"
+                android:background="@color/menu_title_color" />
+
+            <TextView
+                android:id="@+id/menu_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_item_divider_3"
+                android:background="@drawable/menu_selected_blank"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="Info"
+                android:textColor="@color/menu_title_color"
+                android:textSize="@dimen/menu_title_textsize" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/about_less"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_info"
+                android:background="@drawable/menu_about_selected"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/menu_accent_marginLeft"
+                android:paddingTop="@dimen/menu_accent_marginTop"
+                android:text="about LESS"
+                android:textColor="#000"
+                android:textSize="@dimen/menu_accent_textsize" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/contact_us"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about_less"
+                android:background="@drawable/menu_about_selected_below"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/menu_accent_marginLeft"
+                android:paddingTop="@dimen/menu_accent_marginTop"
+                android:text="contact us"
+                android:textColor="#FFF"
+                android:textSize="@dimen/menu_accent_textsize" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/faq"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_us"
+                android:background="@drawable/menu_selected_blank"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/menu_accent_marginBottom"
+                android:paddingLeft="@dimen/menu_accent_marginLeft"
+                android:paddingTop="@dimen/menu_accent_marginTop"
+                android:text="faq"
+                android:textColor="#FFF"
+                android:textSize="@dimen/menu_accent_textsize" >
+            </TextView>
+
+            <View
+                android:id="@+id/menu_item_divider_4"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/faq"
+                android:background="@color/menu_title_color" />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_item_divider_4"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/menu_unselected"
+                android:gravity="center_vertical"
+                android:text="Logout"
+                android:textColor="#FFF"
+                android:textSize="@dimen/menu_title_textsize" >
+            </TextView>
+        </RelativeLayout>
+
+        <!-- Sliding Panel -->
+
+        <LinearLayout
+            android:id="@+id/slidingPanel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/background_type1"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/header_height"
+                android:background="#000000" >
+
+                <ImageView
+                    android:id="@+id/menuViewButton"
+                    android:layout_width="@dimen/hamburger_size"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/hamburger"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/pageTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="ABOUT US"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/header_textsize" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/insideLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/menu_normal" >
+
+                <TextView
+                    android:id="@+id/about_less_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/aboutless_marginTop"
+                    android:background="@color/menu_active"
+                    android:paddingBottom="@dimen/about_padding_top_bottom"
+                    android:paddingLeft="@dimen/about_padding_left_right"
+                    android:paddingRight="@dimen/about_padding_left_right"
+                    android:paddingTop="@dimen/about_padding_top_bottom"
+                    android:shadowColor="#DD000000"
+                    android:shadowDx="0.5"
+                    android:shadowDy="0.5"
+                    android:shadowRadius="1.40"
+                    android:text="@string/aboutless"
+                    android:textColor="#FFF"
+                    android:textSize="@dimen/aboutless_textsize" />
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="@dimen/logo_width"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/logo_marginTop"
+                    android:src="@drawable/less_logo"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

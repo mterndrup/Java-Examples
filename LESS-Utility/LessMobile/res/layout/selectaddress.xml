@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#4274b9"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="#000000" >
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Select Your Address"
+            android:textColor="#FFF"
+            android:textSize="@dimen/header_textsize" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4274b9"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <TextView
+            android:id="@+id/selectAddressText"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/blankspace"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/listview_height"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#CCCCCC"
+        android:dividerHeight="0dp"
+        android:listSelector="@drawable/listview_signup"
+        android:paddingLeft="2dp" />
+
+    <LinearLayout
+        android:id="@+id/button_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4274b9"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin" >
+
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_type3"
+            android:text="Continue"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/button_textsize" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_type4"
+            android:text="back"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/button_textsize" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.utility.less.CustomViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/pagerTabStrip"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom" >
+        </android.support.v4.view.PagerTabStrip>
+    </com.utility.less.CustomViewPager>
+    <com.utility.less.CustomViewPager
+        android:id="@+id/viewPagerBottom"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" >
+
+    </com.utility.less.CustomViewPager>
+
+</RelativeLayout>

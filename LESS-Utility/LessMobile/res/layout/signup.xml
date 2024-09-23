@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/full_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4274b9"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/header_height"
+            android:background="#000000" >
+
+            <TextView
+                android:id="@+id/pageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Choose Your Settings"
+                android:textColor="#FFF"
+                android:textSize="@dimen/header_textsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4274b9"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
+
+            <TextView
+                android:id="@+id/signup_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Address"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_textsize" />
+
+            <TextView
+                android:id="@+id/signup_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/signup_address_set"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="Email Address"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_textsize" />
+
+            <EditText
+                android:id="@+id/edittext_email"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_below="@+id/signup_email"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext"
+                android:inputType="textNoSuggestions"
+                android:paddingLeft="@dimen/edittext_indent"
+                android:singleLine="true"
+                android:imeOptions="actionNext"
+                android:textSize="@dimen/edittext_texsize" />
+
+            <TextView
+                android:id="@+id/signup_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittext_email"
+                android:layout_marginTop="5dp"
+                android:gravity="left"
+                android:text="Create Password"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_textsize" />
+
+            <EditText
+                android:id="@+id/edittext_password"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/edittext_height"
+                android:layout_below="@+id/signup_password"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/edittext_indent"
+                android:textSize="@dimen/edittext_texsize" />
+
+            <TextView
+                android:id="@+id/signup_address_set"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/signup_address"
+                android:layout_below="@+id/signup_address"
+                android:gravity="left"
+                android:text="Address"
+                android:textColor="#000000"
+                android:textSize="@dimen/title_textsize" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notification_settings"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#498bc8"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview_notify_settings"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="Notification Settings"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/title_textsize" />
+
+            <ImageView
+                android:id="@+id/signup_arrow"
+                android:layout_width="@dimen/arrow_size"
+                android:layout_height="@dimen/arrow_size"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/hidden_notification_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notification_settings"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/belowlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/button_type1_active"
+                android:paddingBottom="15dp" >
+
+                <CheckBox
+                    android:id="@+id/CheckboxAppDaily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/appNotify"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="@dimen/checkbox_text_marginTop"
+                    android:button="@drawable/checkbox"
+                    android:paddingLeft="@dimen/checkbox_text_marginLeft"
+                    android:text="Daily"
+                    android:textSize="@dimen/title_textsize" />
+
+                <TextView
+                    android:id="@+id/appNotify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:gravity="bottom"
+                    android:paddingLeft="15dp"
+                    android:text="App Notifications"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/title_textsize" />
+
+                <CheckBox
+                    android:id="@+id/CheckboxAppWeekly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/CheckboxAppDaily"
+                    android:layout_alignBottom="@+id/CheckboxAppDaily"
+                    android:layout_marginLeft="34dp"
+                    android:layout_toRightOf="@+id/CheckboxAppDaily"
+                    android:button="@drawable/checkbox"
+                    android:paddingLeft="@dimen/checkbox_text_marginLeft"
+                    android:text="Weekly"
+                    android:textSize="@dimen/title_textsize" />
+
+                <com.draw.SwitchButton
+                    android:id="@+id/toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/register_area"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin" >
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/button_height"
+                android:background="@drawable/button_type3"
+                android:text="Register"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/button_textsize" />
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/button_height"
+                android:layout_below="@+id/register_button"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_type4"
+                android:text="back"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/button_textsize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

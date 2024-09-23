@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">50dp</dimen>
+    
+    <!-- Used for Large Screens -->
+    <dimen name="large_header">60sp</dimen>
+    <dimen name="large_edittextSize">32sp</dimen>
+    <dimen name="large_buttonHeight">60sp</dimen>
+    <dimen name="large_section_padding_top_and_bottom">20sp</dimen>
+    <dimen name="large_viewpager_header">38sp</dimen>
+    
+     <!-- Used for Normal/Medium Screens -->
+    <dimen name="normal_sectionHeader_textsize">22sp</dimen>
+    <dimen name="normal_listview_text">14sp</dimen>
+    
+    <!-- Used for All Screens -->
+    <dimen name="edittext_height">40dp</dimen>
+    <dimen name="edittext_texsize">20sp</dimen>
+    <dimen name="listview_textsize">20sp</dimen>
+    <dimen name="listview_bigger_textsize">24sp</dimen>
+    <dimen name="listview_padding">10dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="button_textsize">24sp</dimen>
+    <dimen name="title_textsize">26sp</dimen>
+    <dimen name="smaller_textsize">20sp</dimen>
+    <dimen name="alt_textsize">20sp</dimen>
+    <dimen name="header_height">35dp</dimen>
+    <dimen name="header_textsize">18sp</dimen>
+    <dimen name="menu_title_textsize">42sp</dimen>
+    <dimen name="menu_accent_textsize">26sp</dimen>
+    <dimen name="menu_accent_marginTop">15dp</dimen>
+    <dimen name="menu_accent_marginBottom">5dp</dimen>
+    <dimen name="menu_accent_marginLeft">30dp</dimen>
+    <dimen name="menu_dashboard_height">90dp</dimen>
+    <dimen name="point_size">30dp</dimen>
+    <dimen name="arrow_size">18dp</dimen>
+    <dimen name="help_size">12dp</dimen>
+    <dimen name="help_top">20dp</dimen>
+    <dimen name="delta_size">18dp</dimen>
+    <dimen name="hamburger_size">35dp</dimen>
+    <dimen name="paddingTop">15dp</dimen>
+    <dimen name="paddingTop_Bigger">30dp</dimen>
+    
+    <!-- MainActivity -->
+    <dimen name="bottom_area_height">150dp</dimen>
+    
+    <!-- SelectAddress -->
+    <dimen name="listview_height">305dp</dimen>
+    <dimen name="blankspace">45dp</dimen>
+    
+    <!-- Tabs -->
+    <dimen name="title_date_cost_textsize">32sp</dimen>
+    <dimen name="blueArrow_marginLeft">8dp</dimen>
+    <dimen name="blueArrow_marginBottom">8dp</dimen>
+    <dimen name="chart_paddingTop">5dp</dimen>
+    
+    <!-- Tabs: Bottom ViewPager Slider -->
+    <dimen name="arrow_margin_bottom">5dp</dimen>
+    <dimen name="budget_edittext_marginLeft">120dp</dimen>
+    <dimen name="budget_edittext_marginTop">58dp</dimen>
+    <dimen name="budget_edittext_texsize">15sp</dimen>
+    <dimen name="budget_edittext_height">25dp</dimen>
+    <dimen name="budget_edittext_width">85dp</dimen>
+    <dimen name="budget_edittext_paddingLeft">5dp</dimen>
+    <dimen name="title_marginTop">15dp</dimen>
+    <dimen name="spending_marginTop">15dp</dimen>
+    <dimen name="days_paddingTop">55dp</dimen>
+    <dimen name="budget_marginTop">18dp</dimen>
+    <dimen name="slide1_image_size">45dp</dimen>
+    <dimen name="slide2_arrow_marginLeft">39dp</dimen>
+    <dimen name="slide3_arrow_marginLeft">33dp</dimen>
+    <dimen name="slide3_arrow_marginTop">22dp</dimen>
+    <dimen name="slide3_arrowBlue_marginLeft">180dp</dimen>
+    <dimen name="slide3_toggle_marginTop">125dp</dimen>
+    <dimen name="slide3_days_textsize">18sp</dimen>
+    <dimen name="slide3_arrowBlue_marginTop">63dp</dimen>
+    <dimen name="slide4_delta_paddingLeft">25dp</dimen>
+    <dimen name="tip_width">300dp</dimen>
+    <dimen name="help_left">5dp</dimen>
+
+    <!-- NotificationOptions -->
+    <dimen name="addressSpace_height">55dp</dimen>
+    <dimen name="addressSpace_textsize">26sp</dimen>
+    <dimen name="checkbox_text_marginLeft">6sp</dimen>
+    
+    <!-- ChangePassword -->
+    <dimen name="changepass_button_height">60dp</dimen>
+    <dimen name="changepass_button_padding">10dp</dimen>
+    
+    <!-- About LESS -->
+    <dimen name="about_padding_top_bottom">7dp</dimen>
+    <dimen name="about_padding_left_right">10dp</dimen>
+    <dimen name="aboutless_marginTop">10dp</dimen>
+    <dimen name="aboutless_textsize">22sp</dimen>
+    <dimen name="logo_marginTop">50dp</dimen>
+    
+    <!-- ContactUs -->
+    <dimen name="contact_text_height">50dp</dimen>
+    <dimen name="contact_text_size">22sp</dimen>
+    <dimen name="contactus_viewpager_height">235dp</dimen>
+</resources>

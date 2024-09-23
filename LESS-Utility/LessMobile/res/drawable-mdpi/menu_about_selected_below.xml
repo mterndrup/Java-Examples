@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item>
+	    
+	        <shape android:shape="rectangle" >
+	
+	            <solid android:color="@color/menu_active" />
+	
+	            <padding android:left="1dp" />
+	        </shape>
+	</item>
+	<!-- 
+    <item>
+    <rotate
+        android:fromDegrees="135"
+        android:pivotX="100.8%"
+        android:pivotY="33%"
+        android:toDegrees="45" >
+        <shape android:shape="rectangle" >
+
+            <solid android:color="@color/menu_triangle" />
+
+            <padding android:left="1dp" />
+        </shape>
+    </rotate>
+</item>
+-->
+</layer-list>

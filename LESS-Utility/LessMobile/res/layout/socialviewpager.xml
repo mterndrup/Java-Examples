@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/texttop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="SOCIAL"
+        android:textColor="#FFF"
+        android:textSize="@dimen/title_textsize" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="@dimen/arrow_size"
+        android:layout_height="@dimen/arrow_size"
+        android:layout_alignBottom="@+id/texttop"
+        android:layout_toRightOf="@+id/imageView2"
+        android:src="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/contactus_social_image"
+        android:layout_height="@dimen/contactus_social_image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginLeft="35dip"
+        android:gravity="center_vertical"
+        android:paddingRight="75dp"
+        android:src="@drawable/twitter" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/contactus_social_image"
+        android:layout_height="@dimen/contactus_social_image"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="35dip"
+        android:gravity="center_vertical"
+        android:paddingLeft="75dp"
+        android:src="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="@dimen/arrow_size"
+        android:layout_height="@dimen/arrow_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/slidesocial2_arrow_marginRight"
+        android:layout_marginTop="@dimen/slidesocial2_arrow_marginTop"
+        android:src="@drawable/arrow" />
+
+</RelativeLayout>

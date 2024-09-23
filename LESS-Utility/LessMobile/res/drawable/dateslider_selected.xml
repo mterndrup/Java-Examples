@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:state_enabled="true">
+        <layer-list>
+            
+            <item>
+                <shape android:shape="rectangle">
+                	<gradient
+				      android:startColor="@color/dateslider_selected"
+				      android:endColor="@color/dateslider_selected"
+				      android:angle="90" />
+				</shape>
+            </item>
+        </layer-list>
+    </item>
+
+
+</selector>
